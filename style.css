@@ -5,6 +5,7 @@
     --color-black: #000000;
     --color-grey: #F3F1F5;
     --color-red: #FF0000;
+    --color-gray: #c4c4c4;
 }
                                  
 * {
@@ -15,12 +16,14 @@
                                  
 body {
     font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
 }
                                  
 .header {
     background-image: url(aset/smkn1smd.png);
-     width: 100%;
-    /* height: 100vh; */
+    position: relative;
+     /* width: 100%; */
+    /* height: 500px; */
     min-height: 100vmin;
     /* max-height: 72vh; */
     background-size: cover;
@@ -162,7 +165,7 @@ body {
 .content-container p {
     line-height: 24px;
     font-size: 20px;
-    /* margin-left: 25%; */
+    margin-left: 25%;
     text-align: justify;
 } 
 /* bagian jurusan */
@@ -451,7 +454,7 @@ body {
 }
 
 .guru-container div {
-    width: 13.5em;
+    /* width: 13.5em; */
     height: 19em;
     border-radius: 28px;
     justify-content: center;
@@ -462,7 +465,7 @@ body {
 /* box-shadow: 6px 6px 16px rgba(255, 240, 240, 0.25); */
  }
 .pic-name {
-    width: 331px;
+    width: 320px;
     height: 44px;
     /* left: 109px; */
     top: 1824px; 
@@ -501,11 +504,13 @@ line-height: 31px;
     padding: 8px;
     display: block;
     border-radius: 10px;
-     margin-left: 30em;
+     margin-left: 30.5em;
     width: 398px;
+   
     justify-content: center;
+    align-items: center;
     text-align: center;
-    position: absolute;
+    position: relative;
     margin-top: 1px;
     text-align: center;
     font-size: 25px;
@@ -552,13 +557,226 @@ line-height: 31px;
     width: 200px;
     height: 200px;
     border-radius: 145px;
-    margin: 10px;
+    margin: 20px;
     left: 45px;
     top: 3010px;
     display: flex;
     background-color: var(--color-red);
     margin-left: px;
-} 
+}
+
+/* Kontak */
+
+.kontak {
+    position: relative;
+    padding-bottom: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    color: var(--color-primary);
+    text-align: center;
+    margin-top: 130px;
+    /* grid-column: 1/3; */
+}
+
+.kontak h1:after {
+    position: absolute;
+    content: "";
+    width: 5%;
+    height: 3px;
+    background-color: var(--color-yellow);
+    bottom: -2px;
+    left: 50.9%;
+    transform: translateX(-65%);
+    margin-bottom: 25px;
+}
+
+.container-mapshub {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+
+.location {
+    position: relative;
+    padding-bottom: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    color: var(--color-primary);
+    text-align: center;
+    margin-top: 130px;
+    /* grid-column: 1/3; */
+}
+
+.hubungi {
+    position: relative;
+    padding-bottom: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    color: var(--color-primary);
+    text-align: center;
+    margin-top: 130px;
+    /* grid-column: 1/3; */
+}
+
+.maps {
+    /* margin-left: 100px; */
+    margin-top: 20px;
+}
+
+.con-hubungi {
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    margin-right: 250px;
+}
+
+.icon {
+    margin-top: 40px;
+    align-items: center;
+    /* margin-left: 450px; */
+    border: 1px solid var(--color-gray);
+}
+
+.icon2 {
+    align-items: center;
+    /* margin-left: 450px; */
+    border: 1px solid var(--color-gray);
+    margin-top: 40px;
+    
+}
+
+.text {
+    margin-top: 40px;
+    text-align: start;
+    font-size: 20px;
+}
+
+.footer {
+    color:var(--color-white);
+    background-color: var(--color-primary) ;
+    position: relative;
+    padding: 50px 100px;
+}   
+.content-footer {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 2.8fr 1fr 1.5fr ;
+    grid-gap: 20px;
+}
+.footer-left {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+    display: grid;
+    grid-template-rows:repeat(1,85px) ;
+}
+.brand {
+    display: flex;
+}
+.brand h1 {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 65px;
+}
+.footer-left img {
+    width: 9%;
+    height: auto;
+   
+}
+h2 {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+.footer a {
+    text-decoration: none;
+}
+.footer-right {
+    display: flex;
+}
+.box a {
+    color:var(--color-grey) ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+.footer-bottom {
+    text-align: center;
+    color: var(--color-grey);
+    padding-top: 90px;
+    font-size: 18px;
+}
+.footer-left p {
+    padding-right: 5%;
+    color: var(--color-grey);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    line-height: 28px;
+}
+.sosials {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 85px);
+    grid-gap: 10px;
+   
+}
+.sosials li {
+    list-style: none;
+}
+.sosials a i {
+    color: var(--color-white);
+    padding: 30px 36px;
+    font-size: 40px;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    
+}
+.line-footer {
+    border-top: 1px solid var(--color-white);
+    line-height: 70px;
+}
+
+
+
+#topBtn {
+    position: fixed;
+    bottom: 800px;
+    right: 40px;
+    font-size: 22px;
+    width: 80px;
+    height: 80px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 99999;
+    visibility: hidden;
+    transition: 0.5s;
+    opacity: 0;
+   
+}
+
+#topBtn.active {
+    visibility: visible;
+    opacity: 1;
+    bottom: 40px;
+
+   
+}
+
+
 
 /* hamburger menu */
                                  
@@ -682,6 +900,36 @@ line-height: 31px;
        
     }
 
+    .brand img {
+        height: 90%;
+        width: 15%;
+    }
+    .brand h1 {
+        font-size: 26px;
+        line-height: 30px;
+        width: 100%;
+    }
+    .footer-left p {
+        display: none;
+    }
+    .footer {
+        padding: 30px;
+    }
+    .content-footer {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer-left {
+       grid-template-columns: repeat(2,1fr);
+   }
+   .sosials {
+       grid-template-columns: repeat(1,1fr);
+       margin-left: 100px ;
+   }
+   .line-footer {
+       font-size: 13px;
+   }
+}
+
 
 
 
@@ -736,26 +984,121 @@ line-height: 31px;
          
       }
       .guru-container {
-          width: 50%;
+        margin-left: 10px;
          
           
           
       }
-      
+
+      .guru-container div {
+        width: 18em;
+        height: 18em;
+        border-radius: 28px;
+        justify-content: center;
+      }
       .jurusan div {
           width: 200px;
           height: 130px;
           margin-top: 50px;
       }
 
-      .header {
-        background-image: url(aset/smkn1smd.png);
-         width: 160%;
-        /* height: 100vh; */
-        min-height: 100vmin;
-        /* max-height: 72vh; */
-        background-size: cover;
-        background-position: center;
+      
+
+      .logo-mou {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
-} 
+    .content-container h2 {
+        color: var(--color-black);
+        font-weight: bold;
+       
+        line-height: 37px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .content-container p {
+        line-height: 24px;
+        
+        margin-left: 0;
+        /* text-align: justify; */
+    } 
+
+}
+
+@media only screen and (max-width: 360px) {
+    
+
+    .judul-sambutan {
+        
+        font-size: 10px;
+        text-align: center;
+        letter-spacing: 0;
+    }
+
+    .judul-jurusan {
+        font-size: 10px;
+    }
+    .guru {
+        font-size: 10px
+    }
+
+    .profil-container img {
+        display: grid;
+        grid-template-rows: 1fr;
+        width: 150px ;
+        height: 200px;
+        margin-top: 15px;
+     /* justify-content: center; */
+      }
+
+      .content-container p {
+          font-size: 16px;
+          text-align: center;
+          
+      }
+
+      .content-container h2  {
+        font-size: 25px;
+        margin-top: 15px;
+        
+        
+    }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+      }
+
+      .jurusan {
+         grid-template-columns: 1fr 1fr;
+         
+      }
+      .guru-container {
+        margin-left: 10px;
+         
+          
+          
+      }
+
+      .guru-container div {
+        width: 18em;
+        height: 18em;
+        border-radius: 28px;
+        justify-content: center;
+      }
+      .jurusan div {
+          width: 200px;
+          height: 130px;
+          margin-top: 50px;
+      }
+
+      .logo-mou div {
+          width: 160px;
+          height: 160px;
+      }
+
+}

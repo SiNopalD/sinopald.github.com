@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jruery.min.js"></script>
     <title>Web Sekolah</title>
 </head>
 
@@ -210,9 +212,9 @@
                 </div>
                 
             </div>
-            <!-- <div class="all-guru">
+            <div class="all-guru">
                 <a href="#">TAMPILKAN SEMUA</a>
-            </div> -->
+            </div>
            
         </div>
         <div class="container-mou">
@@ -238,12 +240,109 @@
             <iframe src="https://calendar.google.com/calendar/embed?src=pajq80g71t4nns2pg3dmj6qvj4%40group.calendar.google.com&ctz=Asia%2FJakarta" style="border: 0" width="1000" height="600" frameborder="0" scrolling="no"></iframe> -->
         </div>
     <div class="container-kontak">
+        <div class="kontak">
+            <h1>Kontak</h1>
+        </div>
+        <div class="container-mapshub">
+            <div class="location">
+                <h1>Lokasi Sekolah</h1>
+                <p class="maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.4411422224157!2d107.92515925084146!3d-6.837595668764744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68d135ab91cee5%3A0xbbf00d892056f010!2sSMK%20Negeri%201%20Sumedang%20(kampus%20depan)!5e0!3m2!1sid!2sid!4v1635488486062!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+            </div>
+           
+
+            <div class="hubungi">
+                <h1>Hubungi</h1>
+                <div class="con-hubungi">
+                <img src="aset/clarity_email-solid.png" alt="" class="icon">
+                <p class="text">smkn1sumedang@sch.id</p>
+                <img src="aset/clarity_map-marker-solid.png" alt="" class="icon2">
+                <p class="text">Jl. Mayor Abdurahman No.209, Kotakaler, Kec. Sumedang Utara, Kabupaten Sumedang, Jawa Barat 45323</p>
+                <img src="aset/bx_bxs-phone.png" alt="" class="icon">   
+                <p class="text">+62 881 0238 80565</p>
+                <img src="aset/ic_round-fax.png" alt="" class="icon">
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, blanditiis.</p>
+            </div>
+
+                
+            </div>
+
+        </div>
 
     </div>
-    <div class="container-footer">
-
+    <div class="footer">
+        <div class="content-footer">
+            <div class="footer-left">
+                <div class="brand">
+                    <img src="aset/logosmk.png" width="50" height="61">
+                    <h1>SMK NEGERI 1 SUMEDANG</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id sit euismod ac aenean aliquam, scelerisque. Volutpat tellus fermentum tincidunt eros, consectetur non tincidunt. At blandit ornare molestie vel vulputate eget. Ipsum turpis gravida elit netus enim rhoncus mauris lacus, ultrices. Erat tortor dictum pellentesque proin orci. Leo amet nibh viverra eleifend. Non id magnis duis condimentum at sit. Scelerisque dapibus ultrices phasellus aliquam quam risus aenean. Lacus, nec nunc at sed senectus nascetur quam ut. Porta bibendum nunc scelerisque erat.</p>
+                <div class="sosials">
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <ul class="footer-right">
+                <li>
+                    <h2>Info Sekolah</h2>
+    
+                    <ul class="box">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Info Sekolah</a></li>
+                        <li><a href="#">Kompetensi Keahlian</a></li>
+                        <li><a href="#">Berita</a></li>
+                        <li><a href="#">Guru</a></li>
+                        <li><a href="#">Kontak</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="footer-right">
+                <li>
+                    <h2>Link Terkait</h2>
+    
+                    <ul class="box">
+                        <li><a href="#">PPDB</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <div class="line-footer">
+                <p>&copy;  Copyright 2021. All Rights Reserved By <span style="color :yellow">ICT NESAS</span></p>
+            </div>
+        </div>
     </div>
-    </div> -->
+    
+    <button id="topBtn" onclick="scrollToTop();"><i class="fas fa-arrow-up"></i></button>
+
+    <script>
+        const topBtn = document.querySelector("#topBtn");
+        
+        window.addEventListener('scroll', function(){
+
+            var scroll = document.querySelector('#topBtn');
+            scroll.classList.toggle("active", window.scrollY > 500)
+            // window.scrollTo(0,0);
+
+           
+      
+
+
+            // $("html, body").animate({ scrollTop: 0}, "slow")
+
+        });
+
+        function scrollToTop(){
+            window.scrollTo({
+                top :0,
+                behavior: 'smooth'
+            })
+
+
+        }
+    </script>
+    
         <script>
             const menuToggle = document.querySelector('.menu-toggle');
             const nav = document.querySelector(' nav ul');
@@ -252,6 +351,7 @@
                 nav.classList.toggle('slide');
             });
         </script>
+       
 
 </body>
 
